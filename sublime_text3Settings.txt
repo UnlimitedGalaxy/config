@@ -1,0 +1,53 @@
+[
+	{ "keys": ["alt+s"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["alt+f"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["alt+e"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["alt+d"], "command": "move", "args": {"by": "lines", "forward": true} },
+	{ "keys": ["shift+left"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+	{ "keys": ["shift+right"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+	{ "keys": ["shift+up"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+	{ "keys": ["shift+down"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+
+	{ "keys": ["alt+w"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["alt+r"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+	{ "keys": ["alt+j"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["alt+k"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+
+	{ "keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+	{ "keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+	{ "keys": ["alt+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+	{ "keys": ["alt+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+
+	{ "keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} },
+
+	{ "keys": ["pageup"], "command": "move", "args": {"by": "pages", "forward": false} },
+	{ "keys": ["pagedown"], "command": "move", "args": {"by": "pages", "forward": true} },
+	{ "keys": ["shift+pageup"], "command": "move", "args": {"by": "pages", "forward": false, "extend": true} },
+	{ "keys": ["shift+pagedown"], "command": "move", "args": {"by": "pages", "forward": true, "extend": true} },
+
+	{ "keys": ["alt+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+g"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+    // unify the settings
+	{ "keys": ["alt+b"], "command": "duplicate_line" },
+	{ "keys": ["alt+y"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["alt+z"], "command": "undo" },
+	{ "keys": ["alt+x"], "command": "cut" },
+	{ "keys": ["alt+c"], "command": "copy" },
+	{ "keys": ["alt+v"], "command": "paste" },
+	{ "keys": ["shift+pagedown"], "command": "find_under_expand" },
+	{ "keys": ["alt+shift+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+shift+down"], "command": "swap_line_down" },
+    // jump
+    { "keys": ["ctrl+alt+d"], "command": "jump_back" },
+	{ "keys": ["ctrl+alt+e"], "command": "jump_forward" },
+]
+
+// jsFormal
+{
+  "keep_array_indentation": true,
+  "e4x": true,
+  // jsformat options
+  "format_on_save_extensions": ["js", "json", "jsx"]
+}
